@@ -1,5 +1,6 @@
 package cn.itcast.solr.first;
 
+import org.apache.log4j.chainsaw.Main;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServer;
 import org.apache.solr.client.solrj.impl.HttpSolrServer;
@@ -53,11 +54,10 @@ public class SolrFirst {
 		for (SolrDocument solrDocument : solrDocumentList) {
 			System.out.println(solrDocument.get("id"));
 			System.out.println(solrDocument.get("title"));
-			System.out.println(solrDocument.get("content"));
-			
-			
-		}
-		
-		
+			System.out.println(solrDocument.get("content"));						
+		}				
+	}
+	public static void main(String[] args) {
+		System.out.println("hello");
 	}
 }
